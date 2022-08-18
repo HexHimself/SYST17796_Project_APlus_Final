@@ -1,26 +1,22 @@
-/**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
- * Add your name as an author and the date!
- */
 
 /**
- * A class to be used as the base Card class for the project. Must be general enough to be instantiated for any Card
- * game. Students wishing to add to the code should remember to add themselves as a modifier.
+ * 
  *
- * @author dancye
+ * @author Marshall Christie
  */
 public class Card {
-    //default modifier for child classes
+    
     private Value value;
     private Suit suit;
     private int numValue;
     
+    // card constructor
     public Card(Value value, Suit suit){
         this.value = value;
         this.suit = suit;
     }
-
+    // assigns an integer value to the card depending on the value enum
+    // it recieves
     public int getNumValue() {
         switch (value) {
             case ACE:
@@ -56,25 +52,30 @@ public class Card {
         }
         return numValue;
     }
-
+    
+    // accessor for suit
     public Suit getSuit() {
         return suit;
 
     }
-
+    
+    // mutator for suit
     public void setSuit(Suit suit) {
         this.suit = suit;
 
     }
-
+    
+    // accessor for value
     public Value getValue() {
         return value;
     }
-
+    
+    // mutator for value
     public void setValue(Value value) {
         this.value = value;
     }
-
+    // toString for displaying card information
+    @Override
     public String toString() {
         return "Value: " + getValue() + " Suit: " + getSuit()+",";
     }

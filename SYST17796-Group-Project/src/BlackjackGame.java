@@ -1,13 +1,6 @@
-/**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
- * Add your name as an author and the date!
- */
 
 /**
- * The class that models your game. You should create a more specific child of
- * this class and instantiate the methods
- * given.
+ * class that models the game object
  *
  * @author Huixia Li
  */
@@ -20,10 +13,6 @@ public class BlackjackGame {
         this.player = player;
         this.dealer = dealer;
     }
-
-    /**
-     * @return the name
-     */
 
     /**
      * @return the players of this game
@@ -40,8 +29,8 @@ public class BlackjackGame {
     }
 
     /**
-     * Play the game. This might be one method or many method calls depending on
-     * your game.
+     * Play the game.
+     * 
      */
     public void play() {
         System.out.println("Hello, "+player.getName()+"! Welcome to BLACK JACK!!");
